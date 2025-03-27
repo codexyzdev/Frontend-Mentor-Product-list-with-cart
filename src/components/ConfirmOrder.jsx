@@ -65,7 +65,7 @@ export default function ConfirmOrder() {
           Order <br className='md:hidden' /> Confirm{" "}
         </h2>
         <p>We hope you enjoy your food!</p>
-        <ul className='overflow-y-auto flex flex-col h-[468px] bg-rose-100 rounded-md '>
+        <ul className='overflow-y-auto flex flex-col h-96 md:h-[468px] bg-rose-100 rounded-md '>
           {cartProducts.map((product, index) => (
             <li
               key={index}
