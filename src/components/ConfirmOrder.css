@@ -1,26 +1,10 @@
-/* Estilos para el botón de apertura */
-.abrir-modal {
-  padding: 15px 30px;
-  font-size: 18px;
-  background-color: #2196f3;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.abrir-modal:hover {
-  background-color: #1976d2;
-}
-
-/* Estilos para la modal */
 dialog {
   width: 100%;
   height: 92%;
-  max-width: 400px;
+  max-width: 600px;
   border: none;
   padding: 16px;
+  border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   transform: translateX(-50%);
   top: auto;
@@ -31,66 +15,10 @@ dialog {
   dialog {
     transform: translate(-50%, -50%);
     top: 50%;
-    height: auto;
+    height: 80vh;
   }
 }
 
 dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-contenido {
-  position: relative;
-}
-
-.modal-titulo {
-  margin-top: 0;
-  color: #333;
-}
-
-.modal-texto {
-  line-height: 1.6;
-  color: #666;
-}
-
-/* Botón de cerrar */
-.cerrar-modal {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
-  padding: 5px;
-  color: #666;
-}
-
-.cerrar-modal:hover {
-  color: #333;
-}
-
-/* Botones de acción */
-.modal-acciones {
-  margin-top: 20px;
-  display: flex;
-  gap: 10px;
-  justify-content: flex-end;
-}
-
-.boton {
-  padding: 8px 16px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.boton.aceptar {
-  background-color: #4caf50;
-  color: white;
-}
-
-.boton.cancelar {
-  background-color: #f44336;
-  color: white;
 }
